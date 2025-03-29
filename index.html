@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador PDF con IA (Cliente - Clave y Prompt Ocultos)</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluir jsPDF (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Incluir pdf.js (CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script>
+        // Configurar el worker para pdf.js (necesario) - Usa la misma versión que pdf.min.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    </script>
+</head>
+<body>
+    <h1>📄 Analizador de riesgo antijurídico -Equipo Alberto Grisales</h1>
+    <p>Sube un PDF para realizar un análisis predefinido.</p>
 
+    <div class="container">
+        <!-- SECCIÓN DE CONFIGURACIÓN ELIMINADA -->
+        <!-- <div class="config-section"> ... </div> -->
+
+        <div class="input-section">
+            <h2>1. Carga tu Documento PDF</h2>
+            <label for="pdfFile">Selecciona un PDF:</label>
+            <input type="file" id="pdfFile" accept=".pdf">
+        </div>
+
+        <!-- SECCIÓN DE INSTRUCCIONES ELIMINADA -->
+        <!-- <div class="input-section"> ... <textarea id="userPrompt"> ... </div> -->
+
+        <div class="action-section">
+            <h2>2. Generar Análisis</h2> <!-- Numeración ajustada -->
+            <button id="analyzeButton">✨ Analizar y Generar PDF</button>
+        </div>
+
+        <div id="status" class="status-section">
+            <!-- Los mensajes de estado aparecerán aquí -->
+        </div>
+
+        <div id="resultSection" class="result-section" style="display: none;">
+            <h2>3. Descargar Resultado</h2> <!-- Numeración ajustada -->
+            <a id="downloadLink" download="analisis_resultado.pdf">⬇️ Descargar Análisis en PDF</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
