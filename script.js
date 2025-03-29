@@ -10,7 +10,7 @@ const GOOGLE_API_KEY = "AIzaSyA3p6lGcZz7hfYtjILfUec2Oi6knai8i8k"; // <--- ¡¡¡
 // Define aquí las instrucciones estándar que SIEMPRE se usarán para el análisis.
 // Modifica este texto para cambiar el tipo de análisis que realiza la IA.
 const ANALYSIS_INSTRUCTIONS = `
-Eres un abogado experto en el tema de riesgo antijuridico y quiero que analices documentos de instituciones publicas del Estado Colombiano y en base a la legislacion Colombiana evalues los riesgos antijuridicos que puede tener el documento proporcionado y ademas si detecta riesgos crear una ruta de prevencion de estos y otra ruta de defensa por medio de nuestros abogados expertos, revisa toda la documentación posible sobre el riesgo antijuridico.
+Eres un abogado experto en el tema de riesgo antijuridico y quiero que analices documentos de instituciones publicas del Estado Colombiano y en base a la legislacion Colombiana evalues los riesgos antijuridicos que puede tener el documento proporcionado y ademas si detecta riesgos crear una ruta de prevencion de estos y otra ruta de defensa por medio de nuestros abogados expertos, revisa toda la documentación posible sobre el riesgo antijuridico con la cual se entreno como agente.
 
 **Formato:**
 Utiliza encabezados de Markdown (#, ##) como se muestra arriba para estructurar tu respuesta.
